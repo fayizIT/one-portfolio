@@ -16,7 +16,7 @@ const Home = () => {
                     and I Learn and trained in  front end with React js
                </p>
                <div>
-               <Link  to="Skills"smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex item-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 to blue-500 cursor-pointer'>
+               <Link  to="Skill"smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex item-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 to blue-500 cursor-pointer'>
                         Skills
                         <span className='hover:rotate-90 duration-300'>
                         <MdOutlineKeyboardArrowRight size={25}
