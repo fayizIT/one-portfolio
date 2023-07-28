@@ -3,10 +3,14 @@ import html from '../assets/html.png';
 import css from '../assets/css.png';
 import javascript from '../assets/javascript.png';
 import bootstrap from '../assets/bootstrap.png';
-import mysql from '../assets/mysql.png';
 import react from '../assets/react.png';
 import github from '../assets/github.png';
 import CLanguage from '../assets/C Language.png';
+import mongoDb from '../assets/mongoDB.png';
+import expressjs from '../assets/Expressjs.png';
+import Nodejs from '../assets/nodejs.png';
+import java from '../assets/java.png';
+
 
 const Skill = () => {
 
@@ -37,9 +41,9 @@ const Skill = () => {
         },
         {
             id:5,
-            src:mysql,
-            title: 'Mysql',
-            Style:'shadow-white-500'
+            src:java,
+            title: 'java',
+            Style:'shadow-blue'
         },
         {
             id:6,
@@ -59,6 +63,31 @@ const Skill = () => {
             title: 'C Language',
             Style:'shadow-blue'
         },
+        {
+            id:9,
+            src:mongoDb,
+            title: 'MongoDB',
+            Style:'shadow-blue'
+        },
+        {
+            id:10,
+            src:expressjs,
+            title: 'Express Js',
+            Style:'shadow-blue'
+        },
+        {
+            id:11,
+            src:Nodejs,
+            title: 'Node Js',
+            Style:'shadow-blue'
+        },
+
+
+
+        
+        
+
+        
 
        
         
