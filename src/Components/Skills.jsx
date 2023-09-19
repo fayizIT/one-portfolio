@@ -10,6 +10,7 @@ import mongoDb from '../assets/mongoDB.png';
 import expressjs from '../assets/Expressjs.png';
 import Nodejs from '../assets/nodejs.png';
 import java from '../assets/java.png';
+import aws from '../assets/aws.png'
 
 const Skill = () => {
   const techs = [
@@ -84,7 +85,16 @@ const Skill = () => {
       title: 'Java',
       style: 'shadow-red-400',
 
-    }
+    },
+    {
+      id: 11,
+  src: aws,
+    title: 'aws',
+    style: 'shadow-red-400',
+
+  },
+    
+
     
   ];
 
