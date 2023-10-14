@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import SocialLink from "./Components/SocialLink";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
+import Works from "./Components/Works";
 
 
 function App() {
@@ -13,8 +14,10 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Works/>
       <Contact/>
       <SocialLink/>
+      
     </div> 
   );
 }

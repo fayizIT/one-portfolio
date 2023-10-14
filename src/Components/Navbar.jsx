@@ -21,9 +21,15 @@ const Navbar=() => {
     },
     {
       id:4,
+      link:'Works',
+    },
+    {
+      id:5,
       link:'Contact',
     },
   ]
+
+  
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
