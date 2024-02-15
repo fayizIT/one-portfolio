@@ -12,6 +12,10 @@ import Nodejs from '../assets/nodejs.png';
 import java from '../assets/java.png';
 import aws from '../assets/aws.png'
 import redux from '../assets/Redux.png'
+import Git from '../assets/git.png'
+import PostgreSQL from '../assets/Postgresql.png'
+import Tailwind from '../assets/tailwind.png'
+import Typescript from '../assets/Typescript.png'
 
 
 const Skill = () => {
@@ -101,7 +105,31 @@ const Skill = () => {
     title: 'Redux',
     style: 'shadow-violet-500',
 
-  }
+  },
+  {
+    id:15,
+    src: Git,
+    title: 'Git',
+    style: 'shadow-red-500',
+  },
+  {
+    id: 16,
+    src: PostgreSQL,
+    title: 'PostgreSQL',
+    style: 'shadow-blue-500',
+  },
+  {
+    id: 17,
+    src: Tailwind,
+    title: 'Tailwind',
+    style: 'shadow-green-500',
+  },
+  {
+    id: 18,
+    src: Typescript,
+    title: 'Typescript',
+    style: 'shadow-blue-500',
+  },
     
 
     

@@ -4,9 +4,10 @@ import MernauthImage from '../projects/Mern Auth.png';
 import NetflixImage from '../projects/Netflix.png';
 import TudoImage from '../projects/Tudo.png';
 import EdistrictImage from '../projects/Edistrict.png';
-import AppointmentImage from '../projects/Dr.appointment.png';
-import olxImage from '../projects/Olx.png';
+
+import IMDBImage from '../projects/IMDB .png'
 import instagramImage from '../projects/Instagram.png';
+import GitImage from '../projects/GitHub.png';
 
 
 const Works = () => {
@@ -15,41 +16,50 @@ const Works = () => {
       title: 'Fresh Hub',
       description: 'E-commerce',
       imageUrl: freshHubImage, // Use the imported image without quotes
+      githubUrl: 'https://github.com/fayizIT/FV-project', // Replace with your GitHub repository URL
     },
     {
       title: 'Mern Auth',
       description: 'User-Management System',
       imageUrl: MernauthImage, // Use the imported image without quotes
+      githubUrl: 'https://github.com/fayizIT/mern-admin-user-management',
     },
     {
       title: 'Netflix',
       description: 'Netflix',
       imageUrl: NetflixImage, // You can provide a URL for other images
+      githubUrl: 'https://github.com/fayizIT/netflix',
     },
     {
       title: 'Tudo',
       description: 'Tudo',
       imageUrl: TudoImage, // You can provide a URL for other images
+      githubUrl: 'https://github.com/fayizIT/my-todo-app',
     },
     {
       title: 'Edistrict Static Website',
       description: 'E-district Application',
       imageUrl: EdistrictImage, // You can provide a URL for other images
+      githubUrl: 'https://github.com/fayizIT/Edistrict-website',
     },
     {
-      title: 'Dr.appointment',
-      description: 'Dr.appointment',
-      imageUrl: AppointmentImage, // You can provide a URL for other images
+      title: 'GitHub Clone',
+      description: 'GitHub',
+      imageUrl: GitImage, // You can provide a URL for other images
+      githubUrl: 'https://github.com/fayizIT/Git-Clone',
     },
     {
-      title: 'Olx',
-      description: 'Olx-Application',
-      imageUrl: olxImage, // You can provide a URL for other images
+      title: 'IMDB Website',
+      description: 'Imdb Website',
+      imageUrl: IMDBImage
+, // You can provide a URL for other images
+      githubUrl: 'https://github.com/fayizIT/IMDB-Project',
     },
     {
       title: 'Instagram',
       description: 'Instagram-Application',
       imageUrl: instagramImage, // You can provide a URL for other images
+      githubUrl: 'https://github.com/fayizIT/mern-admin-user-management',
     },
     // Add more work items as needed
   ];
@@ -67,6 +77,16 @@ const Works = () => {
               <img src={item.imageUrl} alt={item.title} className='w-60 h-auto mx-auto' />
               <h3 className='text-xl font-bold mt-4'>{item.title}</h3>
               <p className='text-gray-400'>{item.description}</p>
+              <div className='mt-4'>
+                <a
+                  href={item.githubUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-blue-500 underline'
+                >
+                  View Source Code on GitHub
+                </a>
+              </div>
             </div>
           ))}
         </div>

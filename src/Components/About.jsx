@@ -12,20 +12,24 @@ const About = () => {
           </p>
         </div>
         <p className='text-xl mt-5 mb-5'>
-          I started learning web development in Jan-2022 and completed Frontend with React Js at Besant Technology Pvt Ltd, where I gained extensive knowledge of frontend and database technologies. Coding has piqued my interest in learning more technologies, and I'm always looking for opportunities to strengthen my web development skills.
+          Hello! I am a passionate web developer who embarked on the journey of web development in January 2022. I successfully completed the Frontend with React Js course at Besant Technology Pvt Ltd, where I acquired extensive knowledge of frontend and database technologies.
 
-          My specialty is front-end web design and development, creating pixel-perfect web pages with beautiful, semantic HTML, CSS, and JavaScript. My interests also extend to branding. I enjoy helping people with branding and design.
+          My coding journey has ignited a deep interest in learning diverse technologies. I am continuously seeking opportunities to enhance my web development skills and stay updated with the latest trends.
+
+          Specializing in front-end web design and development, I take pride in crafting pixel-perfect web pages using beautiful, semantic HTML, CSS, and JavaScript. My expertise also extends to branding, where I find joy in assisting individuals with their branding and design needs.
 
           <br />
         </p>
 
         <div className='pb-4'>
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
-            Education
+            Education and Experience
           </p>
         </div>
         <p>
-          I completed my BSc in computer science in 2020, and I have 1.2 years of experience in technical support at Aabasoft Pvt Ltd in Kakkanad. In this role, I focused on network troubleshooting and resolving packet loss issues.
+          Apart from my academic background, I have gained 1.2 years of experience in technical support at Aabasoft Pvt Ltd in Kakkanad. In this role, I focused on network troubleshooting and resolving packet loss issues.
+
+          Currently, I am working as a freelancer, primarily focusing on backend development with Node.js and PostgreSQL. Am able to  responsibilities include database design and API documentation. This experience contributes significantly to my well-rounded skill set in web development.
 
           This online portfolio is a testament to my knowledge and skills in web development.
         </p>
