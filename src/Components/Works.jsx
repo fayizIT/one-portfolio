@@ -25,6 +25,19 @@ const Works = () => {
       githubUrl: 'https://github.com/fayizIT/mern-admin-user-management',
     },
     {
+      title: 'GitHub Clone',
+      description: 'GitHub',
+      imageUrl: GitImage, // You can provide a URL for other images
+      githubUrl: 'https://github.com/fayizIT/Git-Clone',
+    },
+    {
+      title: 'IMDB Website',
+      description: 'Imdb Website',
+      imageUrl: IMDBImage
+, // You can provide a URL for other images
+      githubUrl: 'https://github.com/fayizIT/IMDB-Project',
+    },
+    {
       title: 'Netflix',
       description: 'Netflix',
       imageUrl: NetflixImage, // You can provide a URL for other images
@@ -42,19 +55,7 @@ const Works = () => {
       imageUrl: EdistrictImage, // You can provide a URL for other images
       githubUrl: 'https://github.com/fayizIT/Edistrict-website',
     },
-    {
-      title: 'GitHub Clone',
-      description: 'GitHub',
-      imageUrl: GitImage, // You can provide a URL for other images
-      githubUrl: 'https://github.com/fayizIT/Git-Clone',
-    },
-    {
-      title: 'IMDB Website',
-      description: 'Imdb Website',
-      imageUrl: IMDBImage
-, // You can provide a URL for other images
-      githubUrl: 'https://github.com/fayizIT/IMDB-Project',
-    },
+   
     {
       title: 'Instagram',
       description: 'Instagram-Application',
