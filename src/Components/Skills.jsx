@@ -18,6 +18,8 @@ import Tailwind from "../assets/tailwind.png";
 import Typescript from "../assets/Typescript.png";
 import NextJs from "../assets/nextjs.png";
 import NestJs from "../assets/nestjs.png";
+import Swagger from "../assets/swagger.png"
+import Jest from "../assets/jest.png"
 
 const Skill = () => {
   const techs = [
@@ -135,6 +137,18 @@ const Skill = () => {
       title: "Tailwind",
       style: "shadow-green-500",
     },
+    {
+      id: 21,
+      src: Swagger,
+      title: "Swagger",
+      style: "shadow-green-500",
+    },
+    {
+      id:22,
+      src:Jest,
+      title: "Jest",
+      style: "shadow-red-500"
+    }
 
   ];
 
