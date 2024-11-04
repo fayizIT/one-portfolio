@@ -5,39 +5,98 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>Portfolio</title>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8K7RLVR1W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-T8K7RLVR1W'); // Replace with your Measurement ID
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Google Sign-In Button -->
+    <div class="g_id_signin" 
+         data-type="standard" 
+         data-client_id="530363508940-9jq0vcq8f0a0sqau70k6rolimr3u4c56.apps.googleusercontent.com" 
+         data-callback="onSignIn">
+    </div>
+
+    <script>
+      function onSignIn(googleUser) {
+          const profile = googleUser.getBasicProfile();
+          console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+          console.log('Name: ' + profile.getName());
+          console.log('Image URL: ' + profile.getImageUrl());
+          console.log('Email: ' + profile.getEmail());
+      }
+
+      function getBrowserInfo() {
+          const userAgent = navigator.userAgent;
+          let browserName;
+
+          if (userAgent.indexOf("Firefox") > -1) {
+              browserName = "Mozilla Firefox";
+          } else if (userAgent.indexOf("SamsungBrowser") > -1) {
+              browserName = "Samsung Internet";
+          } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
+              browserName = "Opera";
+          } else if (userAgent.indexOf("Trident") > -1) {
+              browserName = "Internet Explorer";
+          } else if (userAgent.indexOf("Edge") > -1) {
+              browserName = "Microsoft Edge";
+          } else {
+              browserName = "Unknown Browser";
+          }
+
+          console.log("Browser Name: ", browserName);
+          return browserName;
+      }
+
+      function getDeviceInfo() {
+          const userAgent = navigator.userAgent;
+          let deviceType = "Unknown Device";
+
+          if (/mobile/i.test(userAgent)) {
+              deviceType = "Mobile Device";
+          } else if (/tablet/i.test(userAgent)) {
+              deviceType = "Tablet";
+          } else if (/desktop/i.test(userAgent) || /win|mac|linux/i.test(userAgent)) {
+              deviceType = "Desktop";
+          }
+
+          fetch('https://your-server.com/api/device-info', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                  userAgent: userAgent,
+                  deviceType: deviceType,
+              }),
+          }).then(response => {
+              console.log("Device info sent:", response);
+          }).catch(error => {
+              console.error("Error sending device info:", error);
+          });
+      }
+
+      // Call the function when the page loads
+      window.onload = function() {
+          getDeviceInfo();
+          getBrowserInfo(); // Call this function if you want to log browser info
+      };
+    </script>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
