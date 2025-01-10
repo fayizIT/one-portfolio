@@ -35,12 +35,7 @@ const Skill = () => {
       title: "CSS",
       style: "shadow-blue-500",
     },
-    {
-      id: 3,
-      src: javascript,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-    },
+
     {
       id: 4,
       src: bootstrap,
@@ -59,42 +54,51 @@ const Skill = () => {
       title: "MongoDB",
       style: "shadow-green-600",
     },
-    {
+        {
       id: 7,
-      src: expressjs,
-      title: "Express.js",
-      style: "shadow-yellow-600",
+      src: javascript,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
     },
-    {
+     {
       id: 8,
       src: Nodejs,
       title: "Node.js",
       style: "shadow-green-600",
     },
     {
-      id: 10,
-      src: github,
-      title: "GitHub",
-      style: "shadow-gray-600",
+      id: 9,
+      src: expressjs,
+      title: "Express.js",
+      style: "shadow-yellow-600",
     },
     {
-      id: 11,
+      id: 10,
       src: Typescript,
       title: "Typescript",
       style: "shadow-blue-500",
     },
     {
-      id:12,
+      id:11,
       src: NextJs,
       title: "Next Js",
       style: "shadow-red-500"
     },
     {
-      id:13,
+      id:12,
       src: NestJs,
       title: "Nest Js",
       style:"shadow-gray-500"
     },
+   
+    {
+      id: 13,
+      src: github,
+      title: "GitHub",
+      style: "shadow-gray-600",
+    },
+    
+    
     {
       id: 14,
       src: CLanguage,
@@ -148,7 +152,14 @@ const Skill = () => {
       src:Jest,
       title: "Jest",
       style: "shadow-red-500"
+    },
+    {
+       id:23,
+      src:Sockect.io,
+      title: "Socket.io",
+      style: "shadow-red-500"
     }
+    
 
   ];
 
