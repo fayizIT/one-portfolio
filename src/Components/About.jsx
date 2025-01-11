@@ -2,6 +2,9 @@ import React from 'react';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from 'react-scroll';
 
+
+//latest update on About
+
 const About = () => {
   return (
     <div name="About" className='w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white'>
