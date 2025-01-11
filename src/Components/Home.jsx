@@ -12,7 +12,7 @@ const Home = () => {
             I'm Full Stack Web Developer
           </h2>
           <p className='text-gray-500 py-4 max-w-md text-center md:text-left '>
-          I have undergone self-taught training as a MERN Full Stack developer, accumulating 1 year of industrial experience. My proficiency spans REST APIs, NoSQL databases, Node.js, React.js, and more. With a robust foundation in software development, I excel in collaborative team environments, demonstrating strong technical skills. I am adept at multitasking and time management. Additionally, I have hands-on experience in database management, particularly with PostgreSQL.
+          I Working on Canary digital. Aias a MERN Full Stack developer, accumulating 1 year of industrial experience. My proficiency spans REST APIs, NoSQL databases, Node.js, React.js, and more. With a robust foundation in software development, I excel in collaborative team environments, demonstrating strong technical skills. I am adept at multitasking and time management. Additionally, I have hands-on experience in database management, particularly with PostgreSQL.
 
 During my training, I focused on frontend development using React, mastering key concepts such as React Hooks and Context API. As a MERN stack developer, I am eager to further explore backend development with Node.js, aiming to build robust RESTful APIs. My commitment to continuous learning drives me to stay updated with the ever-evolving tech landscape. I look forward to showcasing my growth and expertise through a portfolio of projects that reflect my dedication to creating meaningful web experiences.
           </p>
